@@ -85,7 +85,7 @@ nav ul {
 }
 
 .bio img {
-    width: clamp(100px, 70%, 200px);
+    width: clamp(200px, 70%, 200px);
     height: 250px;
     margin: 10px;
 }
@@ -136,24 +136,6 @@ nav ul {
 }
 
 
-/**********************    pet iframe    ************************/
-.pets {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.pets h2 {
-    position: relative;
-    top: -150px
-
-}
-
-.pets iframe {
-    height: 350px;
-    width: 350px;
-}
 
 /*********************    friends iframe    *********************/
 
@@ -195,15 +177,15 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: s#1c6bff;
+    color: #000000;
     font-weight: bold;
 }
 
 /***********************    sidebar styles   ********************/
 
 .bio-sidebar {
-    color: s#1c6bff;
-    border: s#1c6bff; dotted 2px;
+    color: #000000;
+    border: #1c6bff; dotted 2px;
 }
 
 .bio-sidebar .bio,
@@ -214,33 +196,104 @@ ul li a {
 /***********************    main styles   ***********************/
 
 .main-section section {
-    border: #000000 dotted 2px; 
+    border: #000000 solid 2px; 
 }
 
 .main-section .posts div {
-    border: #333333 dotted 2px;
+    border: #1c6bff solid 2px;
 }
 
 
 /************************    bio styles   ***********************/
 
 .bio img {
-    border:#1c6bff dotted 2px;
+    border:#1c6bff solid 2px;
 }
 
 /**********************    aboutme styles   *********************/
 .about-me .about-me-text *{
-    border:#333333 dotted 2px;
+    border:#333333 solid 2px;
 }
 
 /*********************    friends     *********************/
+.friends {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+    column-gap: 0px;
+}
+.friends h2 {
+    grid-column: 1/ span 4;
+    text-align: start;
+}
 
-.friends img {
-    border: #333333 dotted 2px;
+.friends div {
+    height: auto;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.friends div * {
+    flex-basis: auto;
+    flex-shrink: 1;
 }
 
 
-.friends div {
-    width: 200px;
-    height: 200px;
+.friends div img {
+    max-width: 150px;
+    max-height: 150px;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+
+.friends div span {max-width: 150px;
+    max-height: 150px;
+    font-size: 75%;
+    overflow-wrap: break-word; }
+    
+
+    /****friends****/
+
+
+    /*****blog class styles headers****/
+
+   .blog-section{ font-family:cursive;}
+   .blog-section h2{font-weight:100;}
+
+  /* Blog section general styles */
+.blog-section {
+    border: #000000 solid 2px; 
+}
+
+/* Post container styling */
+.blog-section .posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 10px 25px;
+    margin: 10px auto;
+    font-family:monospace;/* Default font for body text */
+}
+
+/* Individual post divs */
+.blog-section .posts div {
+    border: #1c6bff solid 2px;
+    align-self: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* Headers inside posts */
+.blog-section .posts h2,
+.blog-section .posts h3 {
+    font-family:cursive; /* Different font for headers */
+    margin-bottom: 10px;
 }
