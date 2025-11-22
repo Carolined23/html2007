@@ -123,23 +123,6 @@ nav ul {
     align-self: center;
     margin: 20px;
 }
-
-/**********************    music iframe    **********************/
-.music {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.music h2 {
-    align-self: flex-start;
-}
-
-
-
-/*********************    friends iframe    *********************/
-
-s
 /*****************************************************************
 
 Your Playground (Make customizations and changes below)
@@ -147,13 +130,14 @@ Your Playground (Make customizations and changes below)
 *****************************************************************/
 
 body {
-    background-color: #ffffff; /* Change background color */
+    
 }
+
 
 /************************    navbar   ***************************/
 
 nav {
-       background-color: #ffffff	;
+       background-color: #0cf82f	;
        border-bottom: 2px solid 0075fb;
 }
 
@@ -269,6 +253,9 @@ ul li a {
   /* Blog section general styles */
 .blog-section {
     border: #000000 solid 2px; 
+}
+body {
+    background-color: #0cf82f; /* Change background color */
 }
 
 /* Post container styling */
