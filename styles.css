@@ -137,7 +137,7 @@ body {
 /************************    navbar   ***************************/
 
 nav {
-       background-color: #0cf82f	;
+       background-color: transparent;
        border-bottom: 2px solid 0075fb;
 }
 
@@ -148,7 +148,7 @@ nav img {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #1c6bff;
     font-weight: bold;
 }
 
@@ -161,14 +161,14 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #1c6bff;
     font-weight: bold;
 }
 
 /***********************    sidebar styles   ********************/
 
 .bio-sidebar {
-    color: #000000;
+    color: #1c6bff;
     border: #1c6bff; dotted 2px;
 }
 
@@ -180,7 +180,7 @@ ul li a {
 /***********************    main styles   ***********************/
 
 .main-section section {
-    border: #000000 solid 2px; 
+    border: #1c6bff solid 2px; 
 }
 
 .main-section .posts div {
@@ -245,18 +245,19 @@ ul li a {
     /****friends****/
 
 
-    /*****blog class styles headers****/
+    /*****BLOG STYLES*****/
 
    .blog-section{ font-family:cursive;}
    .blog-section h2{font-weight:100;}
 
   /* Blog section general styles */
 .blog-section {
-    border: #000000 solid 2px; 
+    border: 0cf82f solid 2px; 
 }
 body {
-    background-color: #0cf82f; /* Change background color */
+    background-color: #38de51; /* Change background color */
 }
+
 
 /* Post container styling */
 .blog-section .posts {
