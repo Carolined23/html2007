@@ -129,16 +129,11 @@ Your Playground (Make customizations and changes below)
 
 *****************************************************************/
 
-body {
-    
-}
-
-
 /************************    navbar   ***************************/
 
 nav {
        background-color: transparent;
-       border-bottom: 2px solid 0075fb;
+       border-bottom: 2px solid #0075fb  ;
 }
 
 nav img {
@@ -150,6 +145,7 @@ nav ul li a {
     text-decoration: none;
     color: #1c6bff;
     font-weight: bold;
+    font-family: Arial, sans-serif; /
 }
 
 /**********************    text styles   ************************/
@@ -178,7 +174,9 @@ ul li a {
 }
 
 /***********************    main styles   ***********************/
-
+body.index {
+    background-color:aqua;
+}
 .main-section section {
     border: #1c6bff solid 2px; 
 }
@@ -242,20 +240,20 @@ ul li a {
     overflow-wrap: break-word; }
     
 
-    /****friends****/
+ 
 
+    /** Blog */
 
-    /*****BLOG STYLES*****/
-
-   .blog-section{ font-family:cursive;}
+body.blog-section {
+    background-color: #16d82a;
+}
+    
+   .blog-section { font-family:cursive;}
    .blog-section h2{font-weight:100;}
 
   /* Blog section general styles */
 .blog-section {
     border: 0cf82f solid 2px; 
-}
-body {
-    background-color: #38de51; /* Change background color */
 }
 
 
@@ -270,6 +268,7 @@ body {
     margin: 10px auto;
     font-family:monospace;/* Default font for body text */
 }
+
 
 /* Individual post divs */
 .blog-section .posts div {
